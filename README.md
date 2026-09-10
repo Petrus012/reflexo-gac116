@@ -29,7 +29,7 @@ A lógica do jogo (`js/jogo.js`) é separada da manipulação do DOM (`js/interf
 
 ## Versão publicada
 
-https://petrus012.github.io/mastermind-gac116/
+https://petrus012.github.io/reflexo-gac116/
 
 ## Licença
 
