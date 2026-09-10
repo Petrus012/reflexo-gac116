@@ -3,11 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lavra</title>
+  <title>Reflexo</title>
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-  <h1>Lavra</h1>
+  <header>
+    <h1>Reflexo</h1>
+    <p class="subtitulo">Os quadrados acendem e apagam sozinhos. Clique antes.</p>
+  </header>
+
+  <main>
+    <section class="painel">
+      <div class="placar">
+        <span>Tempo <strong id="tempo">30</strong>s</span>
+        <span>Sequência <strong id="combo">0</strong></span>
+        <span>Perdidos <strong id="perdidos">0</strong>/<strong id="maxperdidos">5</strong></span>
+        <span>Pontos <strong id="pontos">0</strong></span>
+        <span>Recorde <strong id="recorde">0</strong></span>
+      </div>
+      <p id="mensagem" class="mensagem">Clique em Iniciar para começar.</p>
+      <div class="botoes">
+        <button id="btn-iniciar">Iniciar</button>
+        <button id="btn-reiniciar">Reiniciar</button>
+      </div>
+    </section>
+
+    <section class="tabuleiro">
+      <div id="grade" class="grade"></div>
+    </section>
+
+    <section class="regras">
+      <h2>Como jogar</h2>
+      <p>
+        Quadrados acendem em posições aleatórias e apagam sozinhos. A barra na
+        base de cada um mostra quanto tempo resta. Clique antes que apague:
+        acertos seguidos aumentam a sequência e valem mais pontos, e cada
+        quadrado perdido zera a sequência. Os quadrados vermelhos valem o dobro
+        e ainda devolvem um dos perdidos. Você perde ao deixar escapar cinco, e
+        vence se sobreviver aos trinta segundos. O jogo acelera com o tempo.
+      </p>
+    </section>
+  </main>
+
   <script src="js/jogo.js"></script>
   <script src="js/interface.js"></script>
 </body>
