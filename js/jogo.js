@@ -1,0 +1,1 @@
+console.log('jogo.js carregado');
